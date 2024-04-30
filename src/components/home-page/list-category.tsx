@@ -1,12 +1,12 @@
 'use client';
 
-import React from 'react'
+import React, {ReactNode}from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 
 
 type PropType = {
-  slides: number[]
+  slides: ReactNode[]
   options?: EmblaOptionsType
 }
 
@@ -19,9 +19,9 @@ const ListCategory: React.FC<PropType> = (props) => {
       <div className="embla__viewport"  ref={emblaRef} >
         <div className="embla__container">
          
-        {slides.map((index) => (
-            <div className="embla__slide border border-black" key={index}>
-              <div className="embla__slide__number">{index + 1}</div>
+           {slides.map((slide, index) => (
+            <div className="embla__slide" key={index}>
+              {slide}
             </div>
           ))}
           
