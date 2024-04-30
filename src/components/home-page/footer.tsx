@@ -18,14 +18,17 @@ const Footer = () => {
             </p>
         </div>
         <div className='flex flex-col gap-2 justify-center items-start'>
-            <h3 className=' text-lg  '>About</h3>
+            <h3 className=' text-lg text-black '>AZADBAZAR</h3>
             <p>
-                About azadBazar group
+                Help
             </p>
-            <p>careers</p>
             <p>
-                Contact us
-            </p>
+            Privacy Policy
+        </p>
+        <p>
+            Terms of Service
+        </p>
+
         </div>
         <div className='flex flex-col gap-2 justify-center items-start'>
             <h3 className=' text-lg  '>About</h3>
