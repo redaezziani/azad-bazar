@@ -10,8 +10,6 @@ import BestSlide from "@/components/home-page/best-slide";
 const Home = () => {
   return (
     <main className="flex overflow-x-hidden relative min-h-screen flex-col items-center justify-start p-3 pb-6 lg:p-0">
-      <Navbar />
-
       <div className="mt-24 pb-11  flex-col w-full max-w-7xl flex justify-start  items-start gap-4 ">
         <div className=" z-1 w-full flex md:w-[100%] justify-center gap-10 md:gap-16 items-center mt-5">
         <Categories />
