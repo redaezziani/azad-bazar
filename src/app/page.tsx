@@ -1,11 +1,11 @@
 import Filter from "@/components/home-page/filter";
 import Footer from "@/components/home-page/footer";
 import ListCardGrid from "@/components/home-page/list-grid";
-import Navbar from "@/components/home-page/navbar";
 import Pagination from "@/components/home-page/pagination";
 import Categories from "@/components/home-page/categories";
 import SearchInput from "@/components/home-page/search-input";
 import BestSlide from "@/components/home-page/best-slide";
+import { CreatePost } from "@/components/home-page/post/create-post";
 
 const Home = () => {
   return (
@@ -14,7 +14,8 @@ const Home = () => {
         <div className=" z-1 w-full flex md:w-[100%] justify-center gap-10 md:gap-16 items-center mt-5">
         <Categories />
         </div>
-        <div className="w-full flex justify-end mt-6 items-center">
+        <div className="w-full flex justify-between mt-6 items-center">
+          <CreatePost />
           <SearchInput/>
         </div>
         <BestSlide/>
