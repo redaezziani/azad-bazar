@@ -15,7 +15,7 @@ const ListCategory: React.FC<PropType> = (props) => {
   const [emblaRef] = useEmblaCarousel(options)
 
   return (
-    <section className="embla w-full">
+    <section className="embla  w-full">
       <div className="embla__viewport"  ref={emblaRef} >
         <div className="embla__container">
          
