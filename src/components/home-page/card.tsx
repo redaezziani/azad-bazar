@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
+
 type CardProps = {
   price: number;
   discount?: number;
@@ -12,8 +13,6 @@ type CardProps = {
 
 const Card = ({ price, discount, description, rating, name, image }: CardProps) => {
   return (
-    <>
-    <Link href={'/posts/1'}>
     
     <div className="w-full flex-col flex justify-start items-start gap-3 overflow-hidden col-span-1  ">
       <Link
@@ -65,8 +64,6 @@ const Card = ({ price, discount, description, rating, name, image }: CardProps) 
       </div>
 
     </div>
-    </Link>
-    </>
   )
 }
 
