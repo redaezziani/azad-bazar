@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 
 type CardProps = {
@@ -10,6 +11,9 @@ type CardProps = {
 
 const Card = ({ title, description, price, image }: CardProps) => {
   return (
+    <>
+    <Link href={'/posts/1'}>
+    
     <div className="w-full flex-col flex justify-start items-start gap-3 overflow-hidden col-span-1  ">
       <div
         className="w-full aspect-video bg-zinc-100 rounded-md overflow-hidden">
@@ -61,6 +65,8 @@ const Card = ({ title, description, price, image }: CardProps) => {
       </div>
 
     </div>
+    </Link>
+    </>
   )
 }
 
