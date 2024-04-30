@@ -9,14 +9,15 @@ type CardProps = {
   rating: number;
   name: string;
   image: string;
+  id?: number;
 }
 
-const Card = ({ price, discount, description, rating, name, image }: CardProps) => {
+const Card = ({ price, discount, description, rating, name, image,id }: CardProps) => {
   return (
     
     <div className="w-full flex-col flex justify-start items-start gap-3 overflow-hidden col-span-1  ">
       <Link
-        href={`/posts/${name}`}
+        href={`/posts/${id}`}
         className="w-full aspect-video bg-zinc-100 rounded-md overflow-hidden">
         <img
           className="w-full h-full object-cover"

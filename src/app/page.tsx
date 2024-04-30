@@ -1,5 +1,4 @@
 import Filter from "@/components/home-page/filter";
-import Footer from "@/components/home-page/footer";
 import ListCardGrid from "@/components/home-page/list-grid";
 import Pagination from "@/components/home-page/pagination";
 import Categories from "@/components/home-page/categories";
@@ -29,7 +28,6 @@ const Home = () => {
         </div>
         <ListCardGrid />
         <Pagination />
-        <Footer />
       </div>
     </main>
   );

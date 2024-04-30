@@ -6,6 +6,7 @@ import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 import "@uploadthing/react/styles.css";
 import { ourFileRouter } from "@/app/api/uploadthing/core";
+import Footer from "@/components/home-page/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -27,6 +28,8 @@ export default function RootLayout({
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
        {children}
+       <Footer />
+
        </div>
       </body>
     </html>
