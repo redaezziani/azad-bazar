@@ -15,7 +15,7 @@ function classNames(...classes: any[]) {
 
 const Navbar = () => {
   return (
-    <Disclosure as="nav" className="bg-gray-800 w-full md:max-w-7xl fixed top-0">
+    <Disclosure as="nav" className="bg-gray-800 z-50 w-full md:max-w-7xl fixed top-0">
       {({ open }) => (
         <div className='w-full'>
           <div className="mx-auto w-full  px-2 sm:px-6 lg:px-8">
