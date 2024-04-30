@@ -3,6 +3,7 @@ import Footer from "@/components/home-page/footer";
 import ListCardGrid from "@/components/home-page/list-grid";
 import Navbar from "@/components/home-page/navbar";
 import Pagination from "@/components/home-page/pagination";
+import Categories from "@/components/home-page/categories";
 import { Button } from "@/components/ui/button";
 
 const Home = () => {
@@ -11,7 +12,9 @@ const Home = () => {
       <Navbar />
 
       <div className="mt-24 pb-11  flex-col w-full max-w-7xl flex justify-start  items-start gap-4 ">
-      
+        <div className=" w-full flex md:w-[100%] justify-center gap-10 md:gap-16 items-center mt-5">
+        <Categories />
+        </div>
         <div className="w-full flex md:w-[100%] justify-center gap-10 md:gap-16 items-center mt-5">
           <div className="flex justify-start items-center gap-1 flex-col text-xs text-zinc-400/90 cursor-pointer hover:text-primary transition-colors ease-in-out duration-500">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={26} height={26} fill={"none"}>
