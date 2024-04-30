@@ -4,6 +4,8 @@ import ListCardGrid from "@/components/home-page/list-grid";
 import Navbar from "@/components/home-page/navbar";
 import Pagination from "@/components/home-page/pagination";
 import Categories from "@/components/home-page/categories";
+import SearchInput from "@/components/home-page/search-input";
+import BestSlide from "@/components/home-page/best-slide";
 
 const Home = () => {
   return (
@@ -14,13 +16,15 @@ const Home = () => {
         <div className=" z-1 w-full flex md:w-[100%] justify-center gap-10 md:gap-16 items-center mt-5">
         <Categories />
         </div>
-        
-        <div className="w-full rounded-md bg-zinc-100 min-h-96 p-2"></div>
+        <div className="w-full flex justify-end mt-6 items-center">
+          <SearchInput/>
+        </div>
+        <BestSlide/>
         <div className="mt-4 w-full flex justify-between items-center ">
           <h3
-            className=" capitalize text-primary text-lg"
+            className=" capitalize font-semibold text-primary text-lg"
           >
-            top products
+            latest posts 
           </h3>
           <Filter />
         </div>
