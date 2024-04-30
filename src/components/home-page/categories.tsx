@@ -2,7 +2,7 @@ import React from 'react'
 import ListCategory from './list-category'
 import { EmblaOptionsType } from 'embla-carousel'
 
-const OPTIONS: EmblaOptionsType = { align: 'start', loop: true }
+const OPTIONS: EmblaOptionsType = { align: 'center', loop: true }
 
 const SLIDES = [
     <div className="flex   justify-start items-center gap-1 flex-col text-xs text-zinc-400/90 cursor-pointer hover:text-primary transition-colors ease-in-out duration-500">
@@ -82,7 +82,7 @@ const SLIDES = [
 function Categories() {
     return (
         <div
-        className=' w-full md:max-w-4xl'
+        className=' w-full md:max-w-4xl  '
         >
             <ListCategory slides={SLIDES} options={OPTIONS} />
 

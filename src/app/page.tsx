@@ -13,7 +13,7 @@ const Home = () => {
       <Navbar />
 
       <div className="mt-24 pb-11  flex-col w-full max-w-7xl flex justify-start  items-start gap-4 ">
-        <div className=" w-full flex md:w-[100%] justify-center gap-10 md:gap-16 items-center mt-5">
+        <div className=" z-1 w-full flex md:w-[100%] justify-center gap-10 md:gap-16 items-center mt-5">
         <Categories />
         </div>
         <div className="w-full flex justify-end mt-6 items-center">
