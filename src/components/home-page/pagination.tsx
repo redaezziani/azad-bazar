@@ -3,7 +3,7 @@ import { Button } from '../ui/button'
 
 const Pagination = () => {
   return (
-    <div className="w-full flex mt-10 justify-center md:justify-between items-center">
+    <div className="w-full  flex mt-10 md:justify-between items-center">
           <p
             className=" text-slate-400 hidden text-xs md:block "
           >
