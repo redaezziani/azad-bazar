@@ -4,12 +4,12 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'home', href: '#', current: true   },
-  { name: 'posts', href: '#', current: false},
+  { name: 'home', href: '#', current: true },
+  { name: 'posts', href: '#', current: false },
   { name: 'categories', href: '#', current: false },
 ]
 
-function classNames(...classes:any[]) {
+function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -59,8 +59,17 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                
+                {/* sell button */}
+                <button
+                 
+                  className=" border-2 px-4 mx-4  md:flex justify-center hidden items-center  gap-2 border-blue-700 text-blue-500 py-1.5 text-sm font-medium rounded-full hover:bg-blue-700 hover:text-white transition duration-200 ease-in-out"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className='text-white' viewBox="0 0 24 24" width="18" height="18" color="#000000" fill="none">
+                    <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  Sell
 
+                </button>
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>

@@ -39,6 +39,7 @@ const Card = ({title, description, price, image}: CardProps) => {
         2000 <span className="text-slate-400">$</span>
       </p>
     </div>
+    
   </div> 
   )
 }

@@ -3,13 +3,13 @@ import { Button } from '../ui/button'
 
 const Pagination = () => {
   return (
-    <div className="w-full flex mt-10 justify-between items-center">
+    <div className="w-full flex mt-10 justify-center md:justify-between items-center">
           <p
-            className=" text-slate-400 text-sm"
+            className=" text-slate-400 hidden text-xs md:block "
           >
             10 products found from 100 products
           </p>
-          <div className="flex gap-2 justify-start items-center">
+          <div className="flex gap-2 md:justify-start items-center justify-center ">
             <Button
               className="text-xs text-slate-400 size-10 "
               variant={'outline'}
