@@ -68,9 +68,9 @@ const page = ({ ...params }) => {
         Post Details 
       </h2>
       {post && (
-    <div className=' w-full   flex justify-start items-start flex-col md:flex-row gap-3' >
-        <div className=' flex flex-col    md:w-1/2   justify-start items-start gap-3 '>
-          <div className='w-full md:w-[500px]'>
+    <div className=' w-full   flex justify-start items-start flex-wrap  gap-3 md:gap-10' >
+        <div className=' flex flex-col    md:w-[45%]   justify-start items-start gap-3 '>
+          <div className='w-full '>
             <img
               className=" w-full aspect-video object-cover rounded-md"
               src={post?.image} alt="" />
@@ -107,7 +107,7 @@ const page = ({ ...params }) => {
             </p>
           </div>
         </div>
-        <div className='flex  md:w-[45%]  justify-start items-start  flex-col gap-10  w-full  '>
+        <div className='flex  md:w-[45%]  justify-start items-start  flex-col  gap-3 md:gap-10 w-full  '>
           <div className=' bg-slate-100   flex flex-col gap-10  w-full  rounded-md px-3 py-4' >
             <div className=' flex gap-2 items-start justify-between'>
               <div className='flex gap-2 items-end justify-center'>
