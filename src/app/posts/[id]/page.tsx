@@ -61,7 +61,7 @@ const page = ({ ...params }) => {
 
   const post = posts.find(post => post.id == params.params.id)
   return (
-    <div className=' w-full px-3 md:px-0  mt-6 flex flex-col justify-center  gap-10 '>
+    <div className=' sm:mx-5 w-full px-3 md:px-0  mt-6 flex flex-col justify-center  gap-10 '>
       <h2
       className='text-xl font-semibold text-zinc-800 capitalize'
       >
